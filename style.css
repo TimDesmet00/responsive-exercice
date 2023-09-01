@@ -1,0 +1,31 @@
+.page {
+    background-color: red;
+}
+#medium, #large {
+    /* display: none; */
+}
+@media only screen and (min-width: 410px) {
+    .page {background-color: green;
+            display: grid;
+            grid-template-areas: "small small medium"
+                                 "large large large";
+    }
+    /* #small {display: none;} */
+    /* #large {display: none;} */
+    /* #medium {display: inline;} */
+    
+}
+@media only screen and (min-width:768px) {
+    .page {background-color: blue;
+            display: grid;
+            grid-template-areas: "small medium large";       
+    }
+    /* #small {display: none;} */
+    /* #medium {display: none;}  */
+    /* #large {display: inline;}   */
+
+}
+
+#small{grid-area: small;}
+#medium{grid-area: medium;}
+#large{grid-area: large;}
